@@ -8,23 +8,12 @@ app = Flask(__name__)
 
 
 
-@app.route('/checkOut')
-def checkOut():
-    return render_template('checkout.html')
-
 @app.route('/tryon/<file_path>',methods = ['POST', 'GET'])
 def tryon(file_path):
 	file_path = file_path.replace(',','/')
 	os.system('python test.py ' + file_path)
 	return redirect('http://127.0.0.1:5000/',code=302, Response=None)
 
-@app.route('/tryall',methods = ['POST', 'GET'])
-def tryall():
-    print("YESSS")
-    cart = request.form['mydata'].replace(',', '/')
-    os.system('python test.py ' + cart)
-    render_template('checkout.html', message='')
-      
     
 @app.route('/')
 def index():
