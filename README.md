@@ -10,3 +10,7 @@ python main.py
 Python version supported : 3.6.9 or lower
 
 Project Demo : <https://www.youtube.com/watch?v=ta1L_gizbxk&feature=youtu.be>
+
+Created by : [Rithik Sachdev](https://github.com/rithiksachdev)
+             [Shashwat Jain](https://github.com/shashwat-jainokay)
+             [Aatmik Jain](https://github.com/AatmikJain)
